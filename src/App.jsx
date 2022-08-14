@@ -1,19 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import { CakeView } from './features/cake/CakeView'
-import { IcecreamView } from './features/icecream/IcecreamView'
-import { UserView } from './features/user/UserView'
-
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import { CakeView } from "./features/cake/CakeView";
+import { IcecreamView } from "./features/icecream/IcecreamView";
+import { UserView } from "./features/user/UserView";
+import { ViewPost } from "./features/posts/ViewPost";
 
 function App() {
   return (
     <div className="App">
-      <CakeView/>
+      {/* <CakeView/>
       <IcecreamView/>
-      <UserView/>
+      <UserView/> */}
+      <ViewPost />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

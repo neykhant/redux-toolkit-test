@@ -12,11 +12,11 @@ export const UserView = () => {
     <div>
       <h1>User List</h1>
       {user.loading && <div>loading.....</div>}
-      { user.error && <div>Error: {user.error} </div>}
-      { user.users.length ? (
+      {user.error && <div>Error: {user.error} </div>}
+      {user.users.length ? (
         <ul>
           {user?.users?.map((user) => (
-            <li key={user.id}>{user.name}</li>
+              <li key={user.id}>{user.name} </li>
           ))}
         </ul>
       ) : null}

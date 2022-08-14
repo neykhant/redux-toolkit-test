@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit'
 import cakeReducer from '../features/cake/cakeSlice'
 import icecreamReducer from '../features/icecream/icecreamSlice'
 import userReducer from '../features/user/userSlice'
+import postReducer from '../features/posts/postSlice'
 
 // const configureStore = require('@reduxjs/toolkit').configureStore
 // const cakeReducer = require('../features/cake/cakeSlice')
@@ -16,7 +17,8 @@ const store = configureStore({
     reducer: {
         cake: cakeReducer,
         icecream: icecreamReducer,
-        user: userReducer
+        user: userReducer,
+        post: postReducer,
     },
     // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger)
 
